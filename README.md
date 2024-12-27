@@ -18,7 +18,7 @@ Ini adalah template proyek Node.js menggunakan Express dengan pengaturan sederha
 1. Clone repository ini:
 
    ```bash
-   git clone https://github.com/salak96/pattern_mvc_nodejs_express
+   git clone https://github.com/salak96/Restoran_app_express
    ```
 
 2. Pindahkan ke direktori proyek:
