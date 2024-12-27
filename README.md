@@ -24,7 +24,7 @@ Ini adalah template proyek Node.js menggunakan Express dengan pengaturan sederha
 2. Pindahkan ke direktori proyek:
 
    ```bash
-   cd repository
+   cd Restoran_app_express
    ```
 
 3. Install dependencies:
