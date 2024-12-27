@@ -44,18 +44,28 @@ Ini adalah template proyek Node.js menggunakan Express dengan pengaturan sederha
 ## Struktur Direktori Proyek
 
 ```plaintext
-├── src/
-│   ├── routes/
-│   │   └── index.js  # Router utama
-│   ├── middleware/
-│   │   └── logger.js # Middleware custom
-│   ├── app.js        # Konfigurasi utama Express
-│   └── server.js     # Entry point aplikasi
-├── .env              # File variabel lingkungan
-├── .prettierrc       # Konfigurasi Prettier
-├── .gitignore        # File untuk mengabaikan direktori/file
-├── package.json      # Metadata dan dependensi proyek
-└── README.md         # Dokumentasi proyek
+reservasi-restoran/
+├── config/             # Konfigurasi database, dll.
+│   └── db.js
+├── controllers/        # Logika bisnis aplikasi
+│   ├── authController.js
+│   ├── restaurantController.js
+│   └── userController.js
+├── models/             # Model database (ORM)
+│   ├── User.js
+│   ├── Restaurant.js
+│   └── Reservation.js
+├── middleware/         # Middleware (autentikasi, dll.)
+│   └── authMiddleware.js
+├── routes/             # Routing API
+│   ├── authRoutes.js
+│   ├── restaurantRoutes.js
+│   └── userRoutes.js
+├── utils/              # Fungsi-fungsi utilitas
+│   └── errorResponse.js
+├── .env                # Variabel lingkungan
+├── server.js           # Entry point aplikasi
+└── package.json
 ```
 
 ---
