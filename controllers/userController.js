@@ -10,7 +10,7 @@ exports.create = async (req, res) => {
         message: "Content can not be empty!"
       });
     }
-
+    console.log(req.body);
     // Create a User
     const user = {
       username: req.body.username,
