@@ -38,7 +38,18 @@ Ini adalah template proyek Node.js menggunakan Express dengan pengaturan sederha
    ```bash
    npm start
    ```
+5. Migrasikan database:
 
+   ```bash
+   npx sequelize-cli db:migrate
+   ```
+6. Buat database baru:
+
+   ```bash
+   npx sequelize-cli db:create
+   ```
+7. Jalankan perintah `npm run dev` untuk menjalankan server Express dalam mode pengembangan.
+   
 ---
 
 ## Struktur Direktori Proyek

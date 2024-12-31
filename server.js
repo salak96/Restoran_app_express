@@ -17,5 +17,13 @@ app.get('/', (req, res) => {
 
 app.use('/users', userRoutes);
 
+app.use((req, res) => {
+    res.status(404).send({ message: `Route ${req.url} not found.` });
+});
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send({ message: 'Something broke!' });
+});
+
 
 app.listen(port, () => console.log(`App listening on port http://localhost:${port}!`));
